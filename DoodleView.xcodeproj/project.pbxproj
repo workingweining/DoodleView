@@ -19,6 +19,9 @@
 		792393D8188E128700075D50 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 792393C0188E128700075D50 /* UIKit.framework */; };
 		792393E0188E128700075D50 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 792393DE188E128700075D50 /* InfoPlist.strings */; };
 		792393E2188E128700075D50 /* DoodleViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 792393E1188E128700075D50 /* DoodleViewTests.m */; };
+		792393ED188E12A500075D50 /* rootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 792393EC188E12A500075D50 /* rootViewController.m */; };
+		792393F0188E135700075D50 /* DrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 792393EF188E135700075D50 /* DrawView.m */; };
+		792393F3188E17CB00075D50 /* draw1.m in Sources */ = {isa = PBXBuildFile; fileRef = 792393F2188E17CB00075D50 /* draw1.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,12 @@
 		792393DD188E128700075D50 /* DoodleViewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DoodleViewTests-Info.plist"; sourceTree = "<group>"; };
 		792393DF188E128700075D50 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		792393E1188E128700075D50 /* DoodleViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DoodleViewTests.m; sourceTree = "<group>"; };
+		792393EB188E12A500075D50 /* rootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rootViewController.h; sourceTree = "<group>"; };
+		792393EC188E12A500075D50 /* rootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = rootViewController.m; sourceTree = "<group>"; };
+		792393EE188E135700075D50 /* DrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawView.h; sourceTree = "<group>"; };
+		792393EF188E135700075D50 /* DrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawView.m; sourceTree = "<group>"; };
+		792393F1188E17CB00075D50 /* draw1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = draw1.h; sourceTree = "<group>"; };
+		792393F2188E17CB00075D50 /* draw1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = draw1.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +118,12 @@
 			children = (
 				792393CB188E128700075D50 /* AppDelegate.h */,
 				792393CC188E128700075D50 /* AppDelegate.m */,
+				792393EB188E12A500075D50 /* rootViewController.h */,
+				792393EC188E12A500075D50 /* rootViewController.m */,
+				792393EE188E135700075D50 /* DrawView.h */,
+				792393EF188E135700075D50 /* DrawView.m */,
+				792393F1188E17CB00075D50 /* draw1.h */,
+				792393F2188E17CB00075D50 /* draw1.m */,
 				792393CE188E128700075D50 /* Images.xcassets */,
 				792393C3188E128700075D50 /* Supporting Files */,
 			);
@@ -240,6 +255,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				792393CD188E128700075D50 /* AppDelegate.m in Sources */,
+				792393F3188E17CB00075D50 /* draw1.m in Sources */,
+				792393ED188E12A500075D50 /* rootViewController.m in Sources */,
+				792393F0188E135700075D50 /* DrawView.m in Sources */,
 				792393C9188E128700075D50 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -359,6 +377,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DoodleView/DoodleView-Prefix.pch";
 				INFOPLIST_FILE = "DoodleView/DoodleView-Info.plist";
@@ -372,6 +391,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DoodleView/DoodleView-Prefix.pch";
 				INFOPLIST_FILE = "DoodleView/DoodleView-Info.plist";
